@@ -18,7 +18,7 @@ from contextlib import asynccontextmanager
 class Settings(BaseSettings):
     mongo_uri: str = "mongodb://localhost:27017"
     database_name: str = "calorie_tracker_db_fastapi"
-    jwt_secret_key: str = "da401869d8e6e69d5df3693505014b302c5d43658f12e28b6f38fec27fb03cbe"
+    jwt_secret_key: str = "da401869d8e6e69d5df3693505014b302c5d43658f12e28b6f38fec27fb03cbe" # TODO: wygeneruj potem od nowa i wywal to do .env z klauzulą prywatną
     jwt_algorithm: str = "HS256"
     jwt_access_token_expire_minutes: int = 30  
 
